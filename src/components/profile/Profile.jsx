@@ -12,7 +12,7 @@ function Profile() {
                     <BsThreeDots className='icon threedot_icon'/>
                 </div>    
                 <div className='profile_section'>
-                    <img id='profile__img' src="images/teddyakoeyong.jpg" alt="Profile Picture" />
+                    <img id='profile__img' src="images/teddyakoeyong.jpg" alt="Profile Img" />
                 </div>
                 <div className='profile_name'>
                     <h2 id='twitter'>teddyakoeyong</h2>

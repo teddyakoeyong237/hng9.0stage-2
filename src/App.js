@@ -1,12 +1,11 @@
-import Links from './components/links/Links';
-import Profile from './components/profile/Profile';
+
 import Footer from './components/footer/Footer';
+import LinkTree from './pages/linkTree/LinkTree';
 
 function App() {
   return (
     <div className="App">
-      <Profile />
-      <Links />
+      <LinkTree />
       <Footer />
     </div>
   );
