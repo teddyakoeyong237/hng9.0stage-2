@@ -78,6 +78,16 @@ function Links() {
                     >
                         Design Books
                     </a>
+                    
+                    <a
+                        className="link_button"
+                        id='contact'
+                        href='/contact'
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Contact Me
+                    </a>
                         
                 </div>
             </div>
