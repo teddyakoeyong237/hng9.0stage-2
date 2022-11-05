@@ -1,22 +1,32 @@
-hng9.0stage-1
-Front-End Stage 1 Task
-💡 Technologies to be used must include React.
+HERE IS YOUR FRONT-END STAGE TWO(2) TASK
 
-💡 Make frequent atomic commits to your GitHub repository and keep standard on commit messages.
+Task Details:
+Continue from the stage 1 task,
+Add another anchor tag styled as a Button with an id of 'contact' that redirects to “/contact” page in your app.
+NB. The contact page path must be "/contact"
+The contact page should have a form with the following details:
+A First and last name input fields with ids ‘first_name’ and ‘last_name’ respectively
+An Email address input field with an id of ‘email’
+A Textarea with an id of ‘message’ to contain the message of the person
+A button with an id of ‘btn__submit’ that will submit the form
+All fields should have appropriate label tags
 
-Create a page like Linktree that allows a person show their personal profile and link to various digital things that they sell. Details below.
+Requirements:
+You're required to use Only React.Js and React-Router-DOM to complete this task. (React.Ts, Next.Ts/Next.Js, Gatsby etc. are NOT Allowed)
+You may use any CSS Framework/Library or CSS Preprocessor of your choice for styling.
+Make sure you Implement the UI Design on Figma and also Follow all the instructions here.
+You Must Deploy to Netlify, Vercel, or GitHub Pages ONLY. (if you host anywhere else and the test fails for you, its no mentor's fault).
+You Must make frequent atomic commits to your GitHub repository and keep standard on commit messages.
 
-Make frequent atomic commits to your GitHub repository and keep standard on commit messages.
+Example:
+feat: The new feature you're adding to a particular application
+fix: A bug fix
+style: Feature and updates related to styling
+refactor: Refactoring a specific section of the code-base
+test: Everything related to testing
+docs: Everything related to documentation
+chore: Regular code maintenance.
+in this manner git commit -m "feat: The new feature you're adding to a particular application"
 
-You can host on Netlify, Github pages or Vercel.
-
-The profile section
-A profile picture with an id ‘profile__img’
-Your twitter username with an id ‘twitter’
-Your slack username with an id ‘slack’ - but this should be hidden (available in code, but cannot be seen)
-The links section
-An Anchor tag styled as a Button with an id ‘btn__zuri’ that redirects to “https://training.zuri.team/”
-An Anchor tag styled as a Button with an id ‘books’ that redirects to http://books.zuri.team with the title and a subtext describing that this is where you find books about design and coding
-An Anchor tag styled as a Button with an id ‘book__python’ that redirects to to https://books.zuri.team/python-for-beginners?ref_id=, with a subtext where you feature the book as if you were selling it.The reference id must be unique and will give you royalties if any sales of the book come
-An Anchor tag styled as a Button with an id ‘pitch’ that redirects to to https://background.zuri.team, with a subtext where you pitch a service for doing background checks on coders. Use a good, selling sentence.
-An Anchor tag styled as a Button with an id ‘book__design’ that redirects to to https://books.zuri.team/design-rules with a subtext where you pitch the free design book offered by Zuri.
+NB:
+If you have a correction/bug to fix, review your code, make changes, commit and push to the same GitHub repository you deployed and submitted the Link.
