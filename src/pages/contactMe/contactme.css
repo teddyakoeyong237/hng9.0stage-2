@@ -24,7 +24,6 @@
 
 .contactme form{
     max-width: 720px;
-
 }
 .w100{
     width: 100%;
@@ -58,6 +57,7 @@
     border: 1px solid #D0D5DD;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
+    transition: ease-out 0.3s;
 }
 .contactme textarea {
     height: 132px;
@@ -71,19 +71,30 @@ textarea:focus{
     border: 1px solid #84CAFF;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
 }
-
-
+.contactme input[type=text]:valid,
+.contactme input[type=email]:valid, 
+textarea:valid{
+    border: 1px solid #84CAFF;
+}
+input::placeholder,
+textarea::placeholder{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
 label.checkbox_input{
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     gap: 12px;
-    margin: 24px 0px 32px;
+    margin: 0px;
 }
 .contactme button{
     padding: 12px 20px;
     gap: 8px;
-    margin: 12px 0px 0px;
+    margin: 8px 0px 0px;
     width: 100%;
     height: 48px;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
@@ -108,13 +119,12 @@ label.checkbox_input{
     transition: ease-out 0.3s;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
 }
-
 .checkbox_field{
     display: flex;
-    gap: 12px;
+    gap: 4px;
     align-items: center;
     justify-content: flex-end;
-    width: none;
+    margin: 24px 0;
 }
 .checkbox_field p{
     font-style: normal;
@@ -140,7 +150,7 @@ input[type='checkbox'] {
     height: 20px;
     background: #FFFFFF;
     border: 1px solid #FFFFFF;
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    /* box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05); */
 }
 input[type='checkbox']:hover{
     box-shadow: 0px 0px 0px 4px #D1E9FF;
@@ -170,19 +180,21 @@ input[type='checkbox']:checked::before {
 }
 input[type='checkbox']:checked::before:hover {
     box-shadow: 0px 0px 0px 4px #D1E9FF;
+    border-color: #84CAFF;
 }
 input[type='checkbox']:checked::after {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    outline: 1px solid #1570EF;
-    background: white;
-    border-radius: 6px;
+    left: 6px;
+    top: 0px;
+    width: 6px;
+    height: 14px;
+    border-radius: 1px;
+    transform: rotate(45deg);
+    border-bottom: 2px solid #1570EF;
+    border-right: 2px solid #1570EF;
 }
-.checkmark:checked::after{
+/* .checkmark:checked::after{
     content: "";
     position: absolute;
     top: 1px;
@@ -192,6 +204,9 @@ input[type='checkbox']:checked::after {
     border: 2px solid;
     border-color: transparent transparent black black;
     transform: rotate(-45deg);
+} */
+.error{
+    color: red;
 }
 
 @media screen and (max-width: 812px) {
