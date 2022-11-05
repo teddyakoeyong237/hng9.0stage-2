@@ -1,0 +1,25 @@
+.container{
+    max-width: 720px;
+    margin: 56px auto;
+}
+.contactme h2{
+    width: 448px;
+    height: 44px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: #101828;
+    margin: 10px 0px;
+}
+.contactme p{
+    /* width: 720px; */
+    /* height: 30px; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #475467;
+    margin: 10px 0px;
+}
