@@ -50,7 +50,7 @@ function ContactMe() {
                             <input type="checkbox" id='checkbox' required />
                             <span className="checkmark"></span>
                         </label>
-                        <p>You agree to providing your data to Eyonganyoh Teddy who may contact you.</p>
+                        <p>You agree to providing your data to Eyonganyoh Teddy Ako who may contact you.</p>
                     </div>
                     <button id='btn__submit'>Send message</button>
                 </form>
