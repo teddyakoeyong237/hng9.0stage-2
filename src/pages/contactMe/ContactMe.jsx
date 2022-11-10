@@ -17,19 +17,9 @@ function ContactMe({ submitForm }) {
         })
     }
 
-    const [buttonValue, setButtonValue] = useState(false);
+    const [checkState, setCheckState] = useState(false);
     const [errors, setErrors] = useState({});
     const [dataIsCorrect, setDataIsCorrect] = useState(false);
-    
-    // useEffect(() => {
-    //     if (Object.keys(errors).length !== 0) {
-    //         setButtonValue(false);
-    //         // setErrors(validation(values))
-    //         setErrors(validation(values));
-    //     } else if (Object.keys(errors).length === 0) {
-    //         setButtonValue(true);
-    //     }
-    // }, [values]);
 
     useEffect(() => {
         if (Object.keys(errors).length === 0 && dataIsCorrect) {
@@ -43,6 +33,15 @@ function ContactMe({ submitForm }) {
         e.preventDefault();
         setErrors(validation(values));
         console.log(values);
+    }
+
+    const changeState = () => {
+        // if (e.target.checked) {
+        //     console.log("Is checked")
+        // } else {
+        //     console.log("Is not checked")
+        // }
+        setCheckState(!checkState);
     }
 
     return (
@@ -111,12 +110,17 @@ function ContactMe({ submitForm }) {
                     </label>
                     <div className="checkbox_field">
                         <label className='checkbox_input'>
-                            <input type="checkbox" id='checkbox' required />
+                            <input
+                                type="checkbox"
+                                value={checkState}
+                                onChange={changeState}
+                                id='checkbox'
+                                required />
                             <span className="checkmark"></span>
                         </label>
                         <p>You agree to providing your data to Eyonganyoh Teddy Ako who may contact you.</p>
                     </div>
-                    <button id='btn__submit' disabled={buttonValue}>Send message</button>
+                    <button id='btn__submit' disabled={!checkState}>Send message</button>
                 </form>
             </div>
         </div>
@@ -124,3 +128,23 @@ function ContactMe({ submitForm }) {
 }
 
 export default ContactMe;
+
+
+// JUNK
+// const [firstName, setFirstName] = useState("");
+// const [lastName, setLastName] = useState("");
+// const [email, setEmail] = useState("");
+// const [message, setMessage] = useState("");
+
+// onChange={(e) => setFirstName(e.target.value)}
+// value = { firstName }
+
+// useEffect(() => {
+//     if (Object.keys(errors).length !== 0) {
+//         setButtonValue(false);
+//         // setErrors(validation(values))
+//         setErrors(validation(values));
+//     } else if (Object.keys(errors).length === 0) {
+//         setButtonValue(true);
+//     }
+// }, [values]);
